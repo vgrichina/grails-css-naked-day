@@ -10,12 +10,11 @@ class CssNakedDayGrailsPlugin {
             "grails-app/views/error.gsp"
     ]
 
-    // TODO Fill in these fields
-    def author = "Your name"
-    def authorEmail = ""
-    def title = "Plugin summary/headline"
+    def author = "Vladimir Grichina"
+    def authorEmail = "vgrichina@gmail.com"
+    def title = "CSS Naked Day Plugin"
     def description = '''\\
-Brief description of the plugin.
+This plugin provides custom tags useful for celebration of CSS Naked Day.
 '''
 
     // URL to the plugin's documentation
