@@ -1,13 +1,13 @@
 class CSSNakedDayTagLib {
     static namespace = "cx"
 
-    def isCssNakedDay = { attrs ->
+    def isCssNakedDay = { attrs, body ->
         if (checkForCssNakedDay()) {
             out << body()
         }
     }
 
-    def isNotCssNakedDay = { attrs ->
+    def isNotCssNakedDay = { attrs, body ->
         if (!checkForCssNakedDay()) {
             out << body()
         }
