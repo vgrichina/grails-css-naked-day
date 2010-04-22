@@ -1,12 +1,21 @@
 class CSSNakedDayTagLib {
     static namespace = "cx"
 
+    
+    /**
+      * Renders enclosed block of code if CSS Naked Day is currently celebrated.
+      *
+      */
     def isCssNakedDay = { attrs, body ->
         if (checkForCssNakedDay()) {
             out << body()
         }
     }
 
+    /**
+      * Renders enclosed bloxk of code if CSS Naked Day is NOT currently celebrated.
+      *
+      */
     def isNotCssNakedDay = { attrs, body ->
         if (!checkForCssNakedDay()) {
             out << body()
